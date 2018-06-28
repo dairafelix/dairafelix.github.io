@@ -69,12 +69,12 @@
  }
 
  #mainNav {
-   background-color: rgba(242, 214, 209, 1);
+   background-color: rgba(147, 123, 173, 0.88);
    font-family: Raleway
  }
 
  #mainNav .navbar-brand {
-   color: #591f29
+   color: #c5f1f4;
  }
 
  #mainNav .navbar-nav .nav-item .nav-link {
@@ -83,7 +83,7 @@
  }
 
  #mainNav .navbar-nav .nav-item.active .nav-link {
-   color: #591f29
+   color: #c5f1f4;
  }
 
  @media (min-width:992px) {
@@ -94,7 +94,7 @@
      color: rgba(255, 255, 255, .4)
    }
    #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-     color: #591f29
+     color: #c5f1f4;
    }
  }
 
@@ -139,7 +139,7 @@
  .cta {
    padding-top: 5rem;
    padding-bottom: 5rem;
-   background-color: rgba(101, 0, 33, 0.9)
+   background-color: rgba(147, 123, 173, 0.88);
  }
 
  .cta .cta-inner {
@@ -219,15 +219,15 @@
  }
 
  .footer {
-   background-color: rgba(242, 214, 209, 1);
+   background-color: rgba(147, 123, 173, 0.88);
  }
 
  .text-primary {
-   color: #591f29 !important
+   color: #3b500e!important;
  }
 
  .bg-primary {
-   background-color: #591f29 !important
+   background-color: #3b500e !important;
  }
 
  .btn {
