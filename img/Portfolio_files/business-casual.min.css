@@ -16,7 +16,6 @@
 
  p {
    line-height: 1.75
-
  }
 
  .text-faded {
@@ -247,28 +246,3 @@
  .font-weight-light {
    font-weight: 100 !important
  }
- /* Refecences CSS */
- .box {
-    background: white;
-    padding: 5px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.box:hover {
-    background: grey;
-}
-
-.active-box {
-    background: black;
-    color: white;
-}
-
-hr {
-    border: 2px solid #d9d9d9;
-}
-
-.card-img-top:hover {
-    opacity: 0.7;
-}
-/* References' End */
