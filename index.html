@@ -67,18 +67,18 @@
           </p>
           <!-- Terminal -->
           <div class="fakeMenu">
-<div class="fakeButtons fakeClose"></div>
-<div class="fakeButtons fakeMinimize"></div>
-<div class="fakeButtons fakeZoom"></div>
-</div>
-<div class="fakeScreen">
-<p class="line1">&#91;&nbsp;&ldquo;I'm a web developer.&rdquo;,<span class="cursor1">_</span></p>
-<p class="line2">&nbsp;&nbsp;&ldquo;I'm a web designer.&rdquo;,<span class="cursor2">_</span></p>
-<p class="line3">&nbsp;&nbsp;&ldquo;Let's work together!&rdquo;&nbsp;&#93;<span class="cursor3">_</span></p>
-<p class="line4"><span class="cursor4">_</span></p>
-</div>
+            <div class="fakeButtons fakeClose"></div>
+            <div class="fakeButtons fakeMinimize"></div>
+            <div class="fakeButtons fakeZoom"></div>
+          </div>
+          <div class="fakeScreen">
+            <p class="line1">&#91;&nbsp;&ldquo;I'm a web developer.&rdquo;,<span class="cursor1">_</span></p>
+            <p class="line2">&nbsp;&nbsp;&ldquo;I'm a web designer.&rdquo;,<span class="cursor2">_</span></p>
+            <p class="line3">&nbsp;&nbsp;&ldquo;Let's work together!&rdquo;&nbsp;&#93;<span class="cursor3">_</span></p>
+            <p class="line4"><span class="cursor4">_</span></p>
+          </div>
 
-           <!-- Terminal  -->
+          <!-- Terminal  -->
         </div>
       </div>
     </div>
@@ -95,12 +95,28 @@
               </h2>
             <!--Contact Form  -->
             <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
+                <label for="exampleFormControlSelect1">How can I help you?</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+    <option>Project</option>
+    <option>Lunch meeting</option>
+    <option>Job Opportunity</option>
+    <option>Other</option>
+  </select>
+              </div>
+              <div class="form-group">
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
             </form>
