@@ -140,7 +140,7 @@
               <!--Grid row-->
           </form>
           <div class="text-center">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+              <a class="btn btn-primary" onclick="sendMail();">Send</a>
           </div>
           <div class="status"></div>
       </div>
@@ -155,16 +155,23 @@
 
   <!-- Footer -->
   <footer class="footer text-faded text-center py-5">
+   
     <!-- My Links -->
     <div class="myLinks">
       <span>
   <!-- Linked-In -->
   <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin"><i class="fab fa-linkedin"></i></a>
 </span>
-      <span>
+    
   <!--gitHub  -->
-  <a href="https://github.com/dairafelix"><i class="fab fa-github"></i></a>
-</span>
+    <span>
+    <a href="https://github.com/dairafelix"><i class="fab fa-github"></i></a>
+    </span>
+
+ <!-- Instagram  -->
+    <span>
+      <a href="https://www.instagram.com/codingbunn/?hl=en"><i class="fab fa-instagram"></i></a>
+    </span>
     </div>
     <div class="container">
       <p class="m-0 small">Copyright &copy; Daira Felix 2018</p>
@@ -174,7 +181,35 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- sendMail -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+  function sendMail()
+{
+     $.ajax({
+           url: "dairafelix@icloud.com",
+           type: "POST",
+           success: function(response) {
+               if (!response) {
+                    alert("Something went wrong. Please try again");
+                    return;
+               }
 
+               var parsedJSON = eval('('+response+')');
+
+               // If there's an error, display it.
+               if(parsedJSON.Error) {
+                  // Handle session timeout.
+                  if (parsedJSON.Error == "Timeout") {
+                       alert("Session timed out. Please login again.");
+                       window.location.reload();
+                   }
+                }
+               document.getElementById('mailStatus').innerHTML = "Email Sent successfully";  
+            }
+     });
+}
+</script>
 </body>
 
 </html>

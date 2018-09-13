@@ -473,6 +473,11 @@ hr {
 .txtbox2 {
   padding-left: 200px;
 }
-
+.ticket {
+  color: red;
+  font-size: 80px;
+  text-align: center;
+  padding-left: 150px;
+}
 /* contact Form */
 
