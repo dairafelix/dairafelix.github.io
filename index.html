@@ -90,64 +90,35 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
+
           <div class="cta-inner text-center rounded">
             <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">I would love to hear from you</span>
+                <span class="section-heading-upper">I would love to hear from you!</span>
                 <span class="section-heading-lower">Contact me:</span>
               </h2>
             <!--Contact Form  -->
-          <section class="section ">
-  <div class="row">
-      <div class="col">
-          <form id="contact-form pl-5" name="contact-form" action="mail.php" method="POST">
+            <section class="section">
               <div class="row">
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        <label for="name" class="">Your name</label>
-                          <input type="text" id="name" name="name" class="form-control">  
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="md-form mb-0"> 
-                        <label for="email" class="">Your email</label>
-                      </div>
-                          <input type="text" id="email" name="email" class="form-control">         
-                  </div>
+                <div class="col">
+            <div class="cont">
+                <ul class="contact">
+                  <li style="text-align: left;">
+                    <p><i class="fa fa-map-marker fa-3x"></i></p>
+                    <p><strong>Mission Tx</strong></br>1618 W Gastel Circle</p>
+                  </li>
+                  <li style="text-align: left;">
+                    <p><i class="fa fa-phone fa-3x"></i></p>
+                    <p><strong>Phone:</strong></br>(956)780-2045</p>
+                  </li>
+                  <li style="text-align: left;">
+                    <p><i class="fa fa-envelope fa-3x"></i></p>
+                    <p><strong>E-mail:</strong></br>dairafelix@icloud.com</p>
+                  </li>
+                </ul>
               </div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                        <label for="subject" class="">Subject</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
-                              <option>Project</option>
-                              <option>Meeting</option>
-                              <option>Job Opportunity</option>
-                              <option>Other</option>
-                            </select>
-                          
-                      </div>
-                  </div>
               </div>
-              <div class="row">
-                  <div class="col-md-12">
-
-                      <div class="md-form">
-                        <label for="message">Your message</label>
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                          
-                      </div>
-
-                  </div>
-              </div>
-              <!--Grid row-->
-          </form>
-          <div class="text-center">
-              <a class="btn btn-primary" onclick="sendMail();">Send</a>
-          </div>
-          <div class="status"></div>
-      </div>
-  </div>
-</section>
+            </div>
+            </section>
 <!-- contact form ends -->
         </div>
       </div>
@@ -185,33 +156,6 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- sendMail -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script>
-  function sendMail()
-{
-     $.ajax({
-           url: "dairafelix@icloud.com",
-           type: "POST",
-           success: function(response) {
-               if (!response) {
-                    alert("Something went wrong. Please try again");
-                    return;
-               }
-
-               var parsedJSON = eval('('+response+')');
-
-               // If there's an error, display it.
-               if(parsedJSON.Error) {
-                  // Handle session timeout.
-                  if (parsedJSON.Error == "Timeout") {
-                       alert("Session timed out. Please login again.");
-                       window.location.reload();
-                   }
-                }
-               document.getElementById('mailStatus').innerHTML = "Email Sent successfully";  
-            }
-     });
-}
-</script>
 </body>
 
 </html>

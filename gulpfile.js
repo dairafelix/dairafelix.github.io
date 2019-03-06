@@ -139,3 +139,9 @@ function validateForm() {
       }
 
 }
+// mail 
+var ractive = new Ractive({
+  el: '#container',
+  template: '#template',
+  data: {}
+});

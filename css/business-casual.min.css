@@ -141,7 +141,7 @@
    background-color: rgba(147, 123, 173, 0.88);
  }
 
- .cta .cta-inner {
+ .cta .fab {
    position: relative;
    padding: 3rem;
    margin: .5rem;
@@ -480,4 +480,30 @@ hr {
   padding-left: 150px;
 }
 /* contact Form */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 
+.contact .fa:before {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.contact li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.cont {
+  text-align: center;
+}
